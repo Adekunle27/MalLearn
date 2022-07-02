@@ -228,3 +228,39 @@ header {
 .categories p {
     font-size: 0.85rem;
 }
+
+/* COURSES  */
+
+.courses {
+    margin-top: 5rem;
+}
+.course {
+    background-color: var(--color-bg1);
+    text-align: center;
+    border-color: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.courses h2 {
+    font-size: 2.4rem;
+}
+
+.course__info {
+    padding: 2rem;
+}
+
+.course__info p {
+    padding: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+/* 
+.course__image {
+    width: 500px;
+} */
+
