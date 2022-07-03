@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SWIPERJS LIBRARY CDN  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     
 </head>
 <body>
@@ -209,6 +213,88 @@
             </article>
         </div>
     </section>
+
+    <!-- TESSTIMONIALS  -->
+
+    <section class="testimonials mySwiper">
+        <h2>Testimonials</h2>
+        <div class="container testimonial__container swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Maria Ramos</h5>
+                    <small>Content Creator</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora hic porro explicabo totam maiores accusantium corrupti officia quidem architecto, facilis illum optio, eligendi impedit, cumque voluptates laborum perferendis aut.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Elon Man</h5>
+                    <small>Entrepreneur</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora hic porro explicabo totam maiores accusantium corrupti officia quidem architecto, facilis illum optio, eligendi impedit, cumque voluptates laborum perferendis aut.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Harry Sterling</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora hic porro explicabo totam maiores accusantium corrupti officia quidem architecto, facilis illum optio, eligendi impedit, cumque voluptates laborum perferendis aut.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Hajia Bintu</h5>
+                    <small>Entrepreneur</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora hic porro explicabo totam maiores accusantium corrupti officia quidem architecto, facilis illum optio, eligendi impedit, cumque voluptates laborum perferendis aut.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Raquel Murillo</h5>
+                    <small>Entrepreneur</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora hic porro explicabo totam maiores accusantium corrupti officia quidem architecto, facilis illum optio, eligendi impedit, cumque voluptates laborum perferendis aut.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                600: 2
+            }
+        })
+    </script>
 </body>
 </html>

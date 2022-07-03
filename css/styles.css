@@ -286,6 +286,7 @@ header {
 
 .question__answer p {
     display: none;
+    padding-top: 1.5rem;
 }
 
 .faq.open p {
@@ -295,4 +296,42 @@ header {
 .faqs h2 {
     text-align: center;
     font-size: 2.4rem;
+}
+
+/* TESTIMONIALS  */
+.testimonial {
+    position: relative;
+}
+.testimonials h2 {
+    font-size: 2.4rem;
+}
+
+.avatar img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1rem solid var(--color-bg1);
+    margin: 0 auto;
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    padding: 2rem;
+    background-color: var(--color-primary);
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial__body::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary);
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
 }
