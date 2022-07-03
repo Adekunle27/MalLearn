@@ -102,6 +102,13 @@ img {
 .nav__menu .active {
     color: var(--color-bg);
 }
+
+/* WINDOW SCROLL  */
+.window-scroll {
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 /* NAVBAR */
 
 nav {
@@ -133,12 +140,6 @@ nav {
 
 nav button {
     display: none;
-}
-
-/* WINDOW SCROLL  */
-.window-scroll {
-    background: var(--color-primary);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 /* HEADER  */
@@ -281,9 +282,6 @@ header {
     align-items: center;
     background-color: var(--color-primary);
     cursor: pointer;
-}
-
-.question__answer h4 {
 }
 
 .question__answer p {
