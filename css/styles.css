@@ -99,6 +99,9 @@ img {
     color: var(--color-white);
 }
 
+.nav__menu .active {
+    color: var(--color-bg);
+}
 /* NAVBAR */
 
 nav {
@@ -259,8 +262,39 @@ header {
     padding: 1.2rem 0 2rem;
     font-size: 0.9rem;
 }
-/* 
-.course__image {
-    width: 500px;
-} */
 
+/* FAQ  */
+
+.faqs {
+    background: var(--color-bg1);
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.faq {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.question__answer h4 {
+}
+
+.question__answer p {
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+} 
+
+.faqs h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
