@@ -319,9 +319,9 @@
 
     <!-- TESSTIMONIALS  -->
 
-    <section class="testimonials mySwiper">
+    <section class="container testimonials__container mySwiper">
       <h2>Testimonials</h2>
-      <div class="container testimonial__container swiper-wrapper">
+      <div class="swiper-wrapper">
         <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/avatar1.jpg" alt="" />
@@ -410,15 +410,77 @@
       </div>
       <div class="swiper-pagination"></div>
     </section>
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__1">
+          <a href="index.html" class="footer__logo"><h4>MalLearn</h4></a>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            ducimus similique consectetur sint eligendi optio hic, et aut eaque
+            animi dignissimos odit quibusdam voluptatem fuga tenetur itaque,
+            distinctio, placeat ea!
+          </p>
+        </div>
+
+        <div class="footer__2">
+          <h4>Permalinks</h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="about.html">Terms and Conditions</a></li>
+            <li><a href="courses.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+1098765432</p>
+            <p>man@man.com</p>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="uil uil-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <small>Copyright &copy; MalLearn</small>
+      </div>
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
         },
       });
     </script>
